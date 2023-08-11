@@ -1,8 +1,7 @@
 public class Client {
-    
-    public static void main(String[] args) {
-        Student student = Student.getBuilder().setAge(23).setGender("MALE").setName("Kishore").setPsp(70).build();
-    
-        System.out.println( student.getAge());
+
+    public static void main(String args[]){
+        Student s = Student.getBuilder().setPhoneNumber("898326737").build();
+        System.out.println(s.getPhoneNumber());
     }
 }
